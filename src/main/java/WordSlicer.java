@@ -1,15 +1,10 @@
 /**
  * Created by replay on 2017. 2. 4..
  */
-public class Main {
-    public static String dummy = "Lead with your strengths, not your weaknesses.";
+public class WordSlicer {
 
-    public static void main(String[] args){
-        Main main = new Main();
-        main.slicer();
-    }
 
-    public void slicer(){
+    public String[] slicer(String dummy){
         //마침표나 콤마를 지운다.
         dummy = dummy.replaceAll(",","").replaceAll("\\.","");
 
@@ -19,5 +14,7 @@ public class Main {
         for (int i = 0; i <data.length; i++){
             System.out.println(data[i]);
         }
+
+        return data;
     }
 }
